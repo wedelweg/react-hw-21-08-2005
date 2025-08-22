@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>404</title>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+        // перенаправляем на index, сохраняя путь
+        (function() {
+            var l = window.location;
+            var base = "/react-hw-21-08-2005";
+            l.replace(base + "/#" + l.pathname.replace(base, "") + l.search + l.hash);
+        })();
+    </script>
+</head>
+<body></body>
+</html>
